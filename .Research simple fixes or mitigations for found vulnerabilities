@@ -1,0 +1,10 @@
+ Research Simple Fixes or Mitigations:
+
+Below are common examples of issues typically found and how to fix them:
+
+Vulnerability                         	Severity	                     Suggested Fix
+OpenSSH outdated version	                High	                   Update to the latest version of OpenSSH using your OS package manager.
+SMBv1 Enabled              	              Critical                    	Disable SMBv1 protocol in Windows Features or via group policy.
+Outdated browser or plugin (e.g., Flash)   	High	                  Uninstall or update to the latest secure version.
+Weak TLS/SSL cipher suites	                Medium	                Disable weak ciphers in web server configuration (Apache, Nginx, etc.).
+Missing Security Updates	                 High                   	Run apt update && apt upgrade (Linux) or Windows Update to patch immediately.
