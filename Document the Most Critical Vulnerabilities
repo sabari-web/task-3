@@ -1,0 +1,34 @@
+Document the Most Critical Vulnerabilities
+Here’s how to document critical vulnerabilities in your GitHub README.md or report:
+
+ Critical Vulnerability #1: SMBv1 Enabled
+Description: The legacy SMBv1 protocol is insecure and vulnerable to attacks like WannaCry.
+
+Risk: Remote code execution and lateral movement.
+
+Fix: Disable SMBv1 using PowerShell:
+
+powershell
+Copy code
+Disable-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol"
+High Vulnerability #2: OpenSSH Outdated
+Description: An older version of OpenSSH is in use, which may contain known vulnerabilities.
+
+Risk: Potential for remote exploitation.
+
+Fix: Update via terminal:
+
+bash
+
+sudo apt update && sudo apt upgrade openssh-server
+⚠High Vulnerability #3: Missing Security Updates
+Description: The system has missing security patches.
+
+Risk: Exploitable vulnerabilities present.
+
+Fix: Run updates regularly:
+
+Windows: Control Panel → Windows Update
+
+Linux: sudo apt update && sudo apt full-upgrade
+
